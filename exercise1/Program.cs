@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
+            // khai bao list Employee
             List<Employee> employees = new List<Employee>();
             bool exit = false;
-
+            //Menu
             while (!exit)
             {
                 Console.WriteLine("Menu:");
@@ -43,7 +44,7 @@
                 }
             }
         }
-
+        //ham add employee moi
         static void AddEmployee(List<Employee> employees)
         {
             try
@@ -79,7 +80,7 @@
                 Console.WriteLine("Invalid input. Please try again.");
             }
         }
-
+        // ham tim luong cao nhat
         static void FindHighestSalary(List<Employee> employees)
         {
             Employee highestSalaryPartTime = null;
@@ -123,7 +124,7 @@
                 Console.WriteLine("No Full-Time Employees found.");
             }
         }
-
+        //tim nhan vien theo ten
         static void FindEmployeeByName(List<Employee> employees)
         {
             Console.Write("Enter employee name to search: ");
