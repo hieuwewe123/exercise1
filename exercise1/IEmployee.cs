@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercise1
 {
+    //interface class
     internal interface IEmployee
     {
         int calculateSalary();
